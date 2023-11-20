@@ -19,6 +19,7 @@ const ConnectDB = async () => {
     console.error("DB 연결 및 동기화 실패", error);
   }
 };
+
 //DB 연결 및 동기화
 ConnectDB();
 

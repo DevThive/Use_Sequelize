@@ -94,7 +94,7 @@ router.delete("/product/:productId", authMiddleware, async (req, res) => {
   });
 
   try {
-    if (product) {
+    if (!product) {
       res.status(401).send({ errorMessage: "상품이 존재하는지 확인해주세요" });
       return;
     }
